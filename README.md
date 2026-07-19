@@ -1,67 +1,60 @@
-# ⚖️ LexIA
-## AI-Powered Contract Review Agent for Technology & Intellectual Property
+# LexIA – Asistente Jurídico con Inteligencia Artificial
 
-LexIA is an AI legal assistant designed to perform preliminary analysis of technology and intellectual property contracts using Generative AI.
+## Descripción del proyecto
 
-The project combines legal expertise and artificial intelligence to identify key clauses, potential risks and provide practical recommendations.
+LexIA es un prototipo de asistente jurídico basado en inteligencia artificial diseñado para apoyar el análisis preliminar de contratos.
 
----
+El proyecto busca explorar la aplicación de herramientas de IA en el ámbito legal, facilitando la revisión inicial de documentos contractuales mediante la extracción de información relevante y la generación de informes jurídicos estructurados.
 
-## 🚀 Features
+## Objetivo
 
-- 📄 Contract upload and text extraction
-- 🤖 AI-powered legal analysis with Google Gemini
-- 📋 Executive summary generation
-- ⚠️ Identification of contractual risks
-- 💡 Practical recommendations
-- ⚖️ Focus on Technology Law and Intellectual Property
+El objetivo de LexIA es brindar una herramienta de apoyo para abogados y profesionales del derecho, permitiendo identificar aspectos relevantes de un contrato, tales como:
 
----
+- Partes intervinientes.
+- Obligaciones principales.
+- Cláusulas relevantes.
+- Riesgos legales preliminares.
+- Confidencialidad y propiedad intelectual.
+- Observaciones generales para una revisión profesional posterior.
 
-## 🛠️ Technology Stack
+## Funcionalidades actuales
 
-- Python
-- Streamlit
-- Google Gemini API
-- python-dotenv
-- python-docx
-- PDF processing tools
+- Carga y lectura de documentos contractuales.
+- Soporte para archivos PDF y DOCX.
+- Extracción del contenido del documento.
+- Análisis preliminar mediante inteligencia artificial.
+- Generación de una estructura de revisión jurídica.
 
----
+## Tecnologías utilizadas
 
-## 📂 Project Structure
-lexia-ai-agent/
+- Python.
+- Streamlit.
+- Google Gemini API.
+- Procesamiento de documentos PDF y DOCX.
 
+## Estructura del proyecto
+LEX_IA/
+│
 ├── app.py
+├── requirements.txt
 ├── agents/
 │ └── contract_agent.py
-├── prompts/
-├── reports/
-├── requirements.txt
-├── README.md
-└── .env
+│
+├── utils/
+│ ├── pdf_reader.py
+│ └── docx_reader.py
+│
+└── README.md
 
----
+## Alcance del proyecto
 
-## ⚙️ Installation
+LexIA constituye una herramienta experimental de LegalTech orientada a la asistencia en tareas jurídicas preliminares.
 
-Clone the repository:
+El resultado generado por el sistema no reemplaza el análisis profesional del abogado, sino que funciona como apoyo para optimizar tiempos de revisión y organización de información contractual.
 
-```bash
-git clone https://github.com/your-user/lexia-ai-agent.git
-pip install -r requirements.txt
-GEMINI_API_KEY=
-streamlit run app.py
-📌 Disclaimer
+## Próximas mejoras
 
-LexIA provides preliminary AI-assisted contract analysis and does not replace professional legal advice.
-
-👩‍⚖️ Author
-
-Yasmina Carla Fernández
-
-Lawyer | Intellectual Property Agent | AI & Technology Law
-
-Guardá.
-
-Después seguimos con `.gitignore` (importante antes de GitHub).
+- Incorporación de exportación de informes jurídicos en formatos profesionales.
+- Mejoras en la interfaz de usuario.
+- Optimización del modelo de análisis contractual.
+- Ampliación de criterios de evaluación jurídica.
