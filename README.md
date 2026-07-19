@@ -1,4 +1,5 @@
- ---
+![LexIA AI Agent](https://img.shields.io/badge/LexIA-AI%20Agent-blue)
+---
 
 # Deploy en Oracle Cloud Infrastructure (OCI)
 
