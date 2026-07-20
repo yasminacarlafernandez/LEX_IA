@@ -1,4 +1,4 @@
- def analyze_contract(texto):
+def analyze_contract(texto):
 
     return f"""
 # ⚖️ LexIA
@@ -8,11 +8,13 @@
 
 ## 1. Identificación del documento
 
-### Documento analizado
+Documento cargado correctamente para análisis preliminar.
 
-{texto}
+Extensión analizada:
+Documento contractual proporcionado por el usuario.
 
----
+Cantidad aproximada de caracteres:
+{len(texto)}
 
 ## 2. Resumen Ejecutivo
 

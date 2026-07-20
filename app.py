@@ -1,4 +1,4 @@
- import streamlit as st
+import streamlit as st
 from agents.contract_agent import analyze_contract
 from pypdf import PdfReader
 from docx import Document
