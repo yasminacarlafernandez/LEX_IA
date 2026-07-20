@@ -1,4 +1,4 @@
-import streamlit as st
+ import streamlit as st
 from agents.contract_agent import analyze_contract
 from pypdf import PdfReader
 from docx import Document
@@ -11,12 +11,12 @@ st.set_page_config(
 
 st.title("⚖️ LexIA - Analizador Jurídico de Contratos")
 
-st.subheader("Asistente jurídico para revisión preliminar contractual")
+st.subheader(
+    "Asistente jurídico basado en Inteligencia Artificial para el análisis preliminar de contratos"
+)
 
 st.markdown("""
-LexIA permite analizar documentos contractuales e identificar
-aspectos relevantes como obligaciones, riesgos legales,
-confidencialidad y propiedad intelectual.
+LexIA utiliza Inteligencia Artificial para realizar una revisión preliminar de contratos, identificando obligaciones, riesgos legales, cláusulas de confidencialidad y aspectos relacionados con la propiedad intelectual.
 """)
 
 st.divider()
@@ -62,7 +62,7 @@ if archivo is not None:
 
     if texto:
 
-        st.success("Documento cargado correctamente.")
+        st.success("✅ Documento cargado correctamente.")
 
         with st.expander("Vista previa del documento"):
             st.text_area(
@@ -73,16 +73,31 @@ if archivo is not None:
 
         if st.button("⚖️ Analizar Contrato"):
 
-            resultado = analyze_contract(texto)
+            try:
+                with st.spinner("Analizando contrato..."):
 
-            st.divider()
-            st.subheader("Informe LexIA")
+                    resultado = analyze_contract(texto)
 
-            st.markdown(resultado)
+                st.divider()
+                st.subheader("📋 Informe LexIA")
+
+                st.markdown(resultado)
+
+            except Exception as e:
+
+                st.error(f"Ocurrió un error durante el análisis: {e}")
 
     else:
+
         st.error("No se pudo extraer texto del documento.")
 
 else:
 
-    st.info("Suba un contrato en formato PDF o DOCX para comenzar.")
+    st.info("📄 Suba un contrato en formato PDF, DOCX o TXT para comenzar.")
+
+
+st.divider()
+
+st.caption(
+    "LexIA • Proyecto desarrollado con Streamlit y Google Gemini | Challenge Alura LATAM + Oracle Next Education"
+)

@@ -1,39 +1,55 @@
-![LexIA AI Agent](https://img.shields.io/badge/LexIA-AI%20Agent-blue)
----
+ ![LexIA AI Agent](https://img.shields.io/badge/LexIA-AI%20Agent-blue)
 
-# Deploy en Oracle Cloud Infrastructure (OCI)
+# LexIA – AI Legal Assistant
 
-La aplicación LexIA fue desarrollada siguiendo una arquitectura preparada para despliegue en infraestructura cloud mediante Oracle Cloud Infrastructure (OCI).
+LexIA es un asistente jurídico desarrollado con Python, Streamlit y Google Gemini para realizar una revisión preliminar de documentos contractuales mediante Inteligencia Artificial.
 
-Actualmente el proyecto se encuentra funcional en entorno local y el repositorio contiene todo el código fuente necesario para su ejecución y posterior despliegue.
+## Características
 
-## Estado del despliegue
+- Análisis preliminar de contratos.
+- Identificación de riesgos legales.
+- Revisión de obligaciones contractuales.
+- Evaluación de cláusulas de confidencialidad.
+- Revisión de aspectos de propiedad intelectual.
+- Interfaz desarrollada con Streamlit.
 
-- Aplicación desarrollada con Python y Streamlit.
-- Código organizado en módulos independientes.
-- Dependencias documentadas en `requirements.txt`.
-- Configuración preparada para ejecución en un entorno cloud.
+## Tecnologías
 
-## URL pública de la aplicación
+- Python
+- Streamlit
+- Google Gemini API
+- PyPDF
+- python-docx
 
-Pendiente de asignación por OCI.
+## Estructura del proyecto
 
----
+```
+lexia-ai-agent/
+│
+├── agents/
+├── screenshots/
+├── utils/
+├── app.py
+├── requirements.txt
+├── .env.example
+└── README.md
+```
 
-# Evidencia del despliegue
+## Configuración
 
-La evidencia del funcionamiento de la aplicación se incorporará mediante captura de pantalla dentro de la carpeta:
-screenshots/
-└── deploy.png
+Crear un archivo `.env` con la siguiente variable:
 
-La captura deberá mostrar la aplicación ejecutándose correctamente en la nube, incluyendo la URL pública asignada por OCI.
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
 
----
+## Ejecución
 
-# Consideraciones finales
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-LexIA es un prototipo experimental de LegalTech orientado al análisis preliminar de documentos contractuales mediante inteligencia artificial.
+## Aviso
 
-El sistema funciona como herramienta de asistencia y organización de información jurídica, sin reemplazar el análisis profesional del abogado.
-
----
+LexIA constituye un prototipo académico de LegalTech destinado a realizar revisiones preliminares de contratos mediante Inteligencia Artificial. No reemplaza el asesoramiento jurídico profesional.

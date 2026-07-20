@@ -1,64 +1,66 @@
-def analyze_contract(texto):
-
-    contrato = texto
+ def analyze_contract(texto):
 
     return f"""
-# LEXIA
+# ⚖️ LexIA
 ## Informe Jurídico Preliminar de Contrato
 
 ---
 
 ## 1. Identificación del documento
 
-Documento analizado:
-{contrato}
+### Documento analizado
+
+{texto}
 
 ---
 
-## 2. Resumen ejecutivo
+## 2. Resumen Ejecutivo
 
-Se realizó una revisión preliminar del documento contractual
-para identificar estructura, obligaciones principales,
-cláusulas relevantes y posibles riesgos jurídicos.
+Se realizó una revisión preliminar del documento contractual con el objetivo de identificar su estructura, las obligaciones asumidas por las partes, las cláusulas relevantes y los posibles riesgos jurídicos que requieren una evaluación más detallada.
 
 ---
 
-## 3. Partes intervinientes
+## 3. Partes Intervinientes
 
-Verificar:
+Verificar especialmente:
 
 - Identificación completa de las partes.
 - Capacidad jurídica.
-- Representación.
+- Representación legal.
 - Domicilios constituidos.
-- Datos fiscales correspondientes.
+- Datos fiscales o registrales.
 
 ---
 
-## 4. Objeto contractual
+## 4. Objeto Contractual
 
 Analizar:
 
 - Alcance del contrato.
 - Prestaciones comprometidas.
 - Derechos y obligaciones.
-- Condiciones de cumplimiento.
+- Condiciones de ejecución.
+- Plazos de cumplimiento.
 
 ---
 
-## 5. Cláusulas relevantes
+## 5. Cláusulas Relevantes
 
 ### Obligaciones
-Evaluación de compromisos asumidos por cada parte.
 
-### Plazos y terminación
-Revisión de duración, renovación y causales de finalización.
+Evaluación de los compromisos asumidos por cada una de las partes.
+
+### Plazos y Terminación
+
+Revisión de la duración del contrato, renovaciones automáticas y causales de rescisión.
 
 ### Responsabilidad
-Análisis de incumplimientos, limitaciones y consecuencias.
+
+Análisis de incumplimientos, limitaciones de responsabilidad y consecuencias legales.
 
 ### Confidencialidad
-Revisión de protección de información reservada.
+
+Revisión de las obligaciones relacionadas con la protección de información confidencial.
 
 ---
 
@@ -68,30 +70,36 @@ Verificar:
 
 - Titularidad de derechos.
 - Cesión o licencias.
-- Uso de contenidos, desarrollos o materiales.
+- Uso de desarrollos, marcas, software o contenidos.
 - Protección de activos intangibles.
 
 ---
 
-## 7. Riesgos jurídicos preliminares
+## 7. Riesgos Jurídicos Preliminares
 
-Puntos a revisar:
+Identificar posibles riesgos tales como:
 
 - Ambigüedades contractuales.
 - Obligaciones insuficientemente definidas.
-- Falta de mecanismos de solución de conflictos.
+- Cláusulas potencialmente abusivas.
+- Ausencia de mecanismos de resolución de conflictos.
 - Desequilibrios entre las partes.
 
 ---
 
 ## 8. Recomendaciones LexIA
 
-- Completar información faltante.
-- Revisar cláusulas críticas.
-- Confirmar alcance de derechos y obligaciones.
-- Realizar validación jurídica profesional.
+- Completar la información faltante.
+- Revisar las cláusulas críticas.
+- Verificar la coherencia jurídica del contrato.
+- Confirmar el alcance de los derechos y obligaciones.
+- Solicitar una revisión profesional antes de su firma.
 
 ---
 
-LexIA - Asistente jurídico de análisis contractual
+> **Aviso:** Este informe constituye una revisión preliminar asistida por Inteligencia Artificial y no reemplaza el asesoramiento jurídico profesional.
+
+---
+
+**LexIA • AI Legal Assistant**
 """
