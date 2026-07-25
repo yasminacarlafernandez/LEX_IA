@@ -65,7 +65,7 @@ LexIA ayuda a:
 
 ## Cómo funciona
 
-LexIA sigue un flujo en cinco pasos similar al de los agentes modernos de revisión legal: ingestión del contrato, comparación con la política, identificación de riesgos, sugerencia de cambios y generación del resumen [web:8].
+LexIA sigue un flujo en cinco pasos similar al de los agentes modernos de revisión legal: ingestión del contrato, comparación con la política, identificación de riesgos, sugerencia de cambios y generación del resumen.
 
 1. La persona usuaria carga un contrato en PDF, DOCX o texto.
 2. El agente extrae cláusulas y metadatos.
