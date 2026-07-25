@@ -1,124 +1,125 @@
-**LexIA** is an AI agent for technology and intellectual property contract review. It helps legal, product, procurement, and startup teams detect risky clauses, compare agreements against policy, suggest redlines, and produce clear review summaries faster.
+# LexIA
 
-[![AI Review](https://img.shields.io/badge/AI-Contract%20Review-7B61FF)](#)
+**LexIA** es un agente de IA para la revisión de contratos de tecnología e propiedad intelectual. Ayuda a detectar cláusulas riesgosas, comparar contratos con políticas internas, sugerir mejoras y generar resúmenes claros para equipos legales y de negocio.
+
+[![IA](https://img.shields.io/badge/IA-Revisi%C3%B3n%20de%20Contratos-7B61FF)](#)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB)](#)
-[![License](https://img.shields.io/badge/License-MIT-green)](#)
-[![Status](https://img.shields.io/badge/Status-Prototype-orange)](#)
+[![Licencia](https://img.shields.io/badge/Licencia-MIT-green)](#)
+[![Estado](https://img.shields.io/badge/Estado-Prototipo-orange)](#)
 
 ---
 
-## Table of Contents
+## Índice
 
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Key Features](#key-features)
-- [How It Works](#how-it-works)
-- [Architecture](#architecture)
-- [Use Cases](#use-cases)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API Design](#api-design)
-- [Security and Legal Notes](#security-and-legal-notes)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
----
-
-## Overview
-
-LexIA is designed to streamline contract review by combining clause extraction, policy comparison, risk detection, and suggested edits into a single AI-assisted workflow. This follows the same general pattern used in modern automated contract review scenarios: ingest the contract, compare it against templates or policy, identify deviations, suggest alternative clauses, and produce a concise summary for review [web:8].
-
-The goal is not to replace legal judgment. The goal is to reduce manual repetition so humans can focus on negotiation, exceptions, and decision-making.
+- [Descripción](#descripci%C3%B3n)
+- [Problema que resuelve](#problema-que-resuelve)
+- [Funciones principales](#funciones-principales)
+- [Cómo funciona](#cómo-funciona)
+- [Arquitectura](#arquitectura)
+- [Casos de uso](#casos-de-uso)
+- [Estructura del repositorio](#estructura-del-repositorio)
+- [Instalación](#instalación)
+- [Configuración](#configuración)
+- [Uso](#uso)
+- [Diseño de la API](#diseño-de-la-api)
+- [Seguridad y aviso legal](#seguridad-y-aviso-legal)
+- [Hoja de ruta](#hoja-de-ruta)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+- [Autora](#autora)
 
 ---
 
-## Problem Statement
+## Descripción
 
-Technology and IP contracts often contain clauses that are hard to track manually, especially across NDAs, MSAs, SOWs, licensing agreements, SaaS terms, assignment clauses, confidentiality terms, indemnities, and data protection addenda. Teams often lose time comparing drafts against internal standards and identifying non-standard language.
+LexIA está pensado para agilizar la revisión de contratos mediante extracción de cláusulas, comparación con una política interna, detección de riesgos y generación de sugerencias de redacción. Este tipo de flujo sigue el patrón de revisión automatizada de contratos: ingestión del documento, comparación contra plantillas o políticas, detección de desvíos, propuestas de cambio y resumen final [web:8].
 
-LexIA addresses this by:
-- Highlighting deviations from approved policy.
-- Flagging legal and commercial risk patterns.
-- Suggesting clearer alternative language.
-- Generating a structured review memo for faster decision-making.
+El objetivo no es reemplazar el criterio legal, sino reducir el trabajo repetitivo para que las personas se enfoquen en negociación, excepciones y decisiones importantes.
 
 ---
 
-## Key Features
+## Problema que resuelve
 
-- Clause extraction from uploaded contracts.
-- Policy-based contract comparison.
-- Risk detection for non-standard or ambiguous language.
-- Suggested redlines and alternative clauses.
-- Summary output for legal and business review.
-- Support for technology, software, and IP-focused agreements.
-- Audit-friendly output with traceable findings.
-- Modular architecture for future integrations.
+Los contratos de tecnología e IP suelen incluir cláusulas complejas y difíciles de revisar manualmente, especialmente en NDA, MSA, SOW, licencias, asignación de propiedad intelectual, confidencialidad, indemnidad y protección de datos.
 
----
-
-## How It Works
-
-LexIA follows a five-step review flow aligned with modern AI legal agent patterns: contract ingestion, template comparison, risk identification, clause suggestions, and review summary [web:8].
-
-1. The user uploads a contract in PDF, DOCX, or text form.
-2. The agent extracts relevant clauses and metadata.
-3. LexIA compares the document against a policy library or clause playbook.
-4. The agent flags risky or missing terms.
-5. The system returns a review report with suggestions and a plain-language summary.
-
-Example:
-- Input: SaaS agreement with custom indemnity language.
-- Output: Clause flagged as high-risk, suggested fallback wording, and a short explanation for legal review.
+LexIA ayuda a:
+- Detectar cláusulas fuera de política.
+- Señalar riesgos legales y comerciales.
+- Proponer redlines o texto alternativo.
+- Generar un informe breve para revisión humana.
 
 ---
 
-## Architecture
+## Funciones principales
+
+- Carga de contratos en PDF, DOCX o TXT.
+- Extracción y clasificación de cláusulas.
+- Comparación con políticas o playbooks internos.
+- Detección de riesgos por lenguaje ambiguo o no estándar.
+- Sugerencias de redacción alternativa.
+- Resumen ejecutivo en lenguaje claro.
+- Salida estructurada para flujos legales.
+- Arquitectura modular para futuras integraciones.
+
+---
+
+## Cómo funciona
+
+LexIA sigue un flujo en cinco pasos similar al de los agentes modernos de revisión legal: ingestión del contrato, comparación con la política, identificación de riesgos, sugerencia de cambios y generación del resumen [web:8].
+
+1. La persona usuaria carga un contrato en PDF, DOCX o texto.
+2. El agente extrae cláusulas y metadatos.
+3. LexIA compara el documento con una biblioteca de políticas o un playbook.
+4. El sistema detecta desviaciones o riesgos.
+5. Devuelve un informe con hallazgos y sugerencias.
+
+Ejemplo:
+- Entrada: contrato SaaS con cláusula de indemnidad amplia.
+- Salida: alerta de riesgo alto, sugerencia de texto alternativo y explicación breve.
+
+---
+
+## Arquitectura
 
 ```mermaid
 flowchart TD
-    A[User Uploads Contract] --> B[Document Parser]
-    B --> C[Clause Extractor]
-    C --> D[Policy / Playbook Retrieval]
-    D --> E[Risk Analysis Agent]
-    E --> F[Redline Suggestion Engine]
-    F --> G[Review Summary Generator]
-    G --> H[Web App / API Response]
+    A[Usuario carga contrato] --> B[Parser de documento]
+    B --> C[Extractor de cláusulas]
+    C --> D[Recuperación de política / playbook]
+    D --> E[Agente de análisis de riesgo]
+    E --> F[Motor de sugerencias]
+    F --> G[Generador de resumen]
+    G --> H[API / Interfaz web]
 
-    D --> I[(Clause Library)]
-    E --> J[(Risk Rules)]
-    F --> K[(Suggested Templates)]
+    D --> I[(Biblioteca de cláusulas)]
+    E --> J[(Reglas de riesgo)]
+    F --> K[(Plantillas sugeridas)]
 ```
 
-### Core Components
+### Componentes
 
-- **Document Parser**: Reads PDF, DOCX, and plain text.
-- **Clause Extractor**: Identifies sections such as confidentiality, IP ownership, liability, and termination.
-- **Policy Engine**: Compares clauses against approved internal standards.
-- **Risk Agent**: Assigns severity and explains why a clause is a concern.
-- **Suggestion Engine**: Proposes fallback language.
-- **Summary Generator**: Produces a short, structured report for humans.
-
----
-
-## Use Cases
-
-LexIA is useful for:
-- Startup legal review.
-- Vendor contract screening.
-- IP assignment verification.
-- SaaS procurement review.
-- NDAs and MSAs.
-- Software licensing analysis.
-- First-pass review before counsel escalation.
+- **Parser de documentos**: lee PDF, DOCX y texto plano.
+- **Extractor de cláusulas**: identifica secciones como confidencialidad, IP, responsabilidad y terminación.
+- **Motor de políticas**: compara el contrato con estándares aprobados.
+- **Agente de riesgo**: clasifica severidad y explica el motivo.
+- **Motor de sugerencias**: propone redacción alternativa.
+- **Generador de resumen**: produce un informe corto y entendible.
 
 ---
 
-## Repository Structure
+## Casos de uso
+
+LexIA sirve para:
+- Revisión legal de startups.
+- Evaluación de contratos de proveedores.
+- Verificación de asignación de IP.
+- Revisión de SaaS y licencias.
+- Análisis de NDAs y MSA.
+- Primera revisión antes de escalar a un abogado.
+
+---
+
+## Estructura del repositorio
 
 ```txt
 lexia/
@@ -133,125 +134,83 @@ lexia/
 ├─ docs/
 ├─ examples/
 ├─ .env.example
+├─ .gitignore
 ├─ README.md
 ├─ LICENSE
-└─ pyproject.toml
+├─ pyproject.toml
+├─ CONTRIBUTING.md
+├─ SECURITY.md
+└─ CODE_OF_CONDUCT.md
 ```
 
 ---
 
-## Getting Started
+## Instalación
 
-### Prerequisites
-- Python 3.11 or higher.
+### Requisitos
+- Python 3.11 o superior.
 - Git.
-- A working LLM provider key.
-- Optional: OCR tooling for scanned PDFs.
+- VS Code.
+- Una clave de API para el modelo de IA.
 
-### Installation
+### Pasos
 
 ```bash
-git clone https://github.com/your-username/lexia.git
+git clone https://github.com/tu-usuario/lexia.git
 cd lexia
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Environment Setup
+---
 
-Create a `.env` file:
+## Configuración
+
+Copiá el archivo de ejemplo y completá tus valores:
 
 ```bash
 cp .env.example .env
 ```
 
-Example variables:
+Ejemplo:
 
 ```env
-LLM_API_KEY=your_api_key_here
+LLM_API_KEY=tu_clave_api
 MODEL_NAME=gpt-4.1-mini
-MAX_TOKENS=4000
 TEMPERATURE=0.2
 POLICY_LIBRARY_PATH=./docs/policies
 ```
 
 ---
 
-## Configuration
+## Uso
 
-LexIA can be configured to adapt to different organizations and review standards.
-
-Recommended configuration options:
-- `MODEL_NAME`: model used for clause analysis and generation.
-- `TEMPERATURE`: lower values for more deterministic review output.
-- `POLICY_LIBRARY_PATH`: location of clause playbooks and fallback templates.
-- `RISK_THRESHOLD`: minimum severity to raise a visible warning.
-- `OUTPUT_FORMAT`: JSON, Markdown, or HTML.
-
-You can also define contract families such as:
-- NDA
-- MSA
-- SOW
-- SaaS Agreement
-- IP Assignment Agreement
-- Software License Agreement
-
----
-
-## Usage
-
-### CLI Example
+### Ejemplo por consola
 
 ```bash
-python -m app.main --file examples/sample_msa.pdf
+python -m app.main --file examples/contrato_muestra.pdf
 ```
 
-### API Example
+### Ejemplo de salida
 
-```http
-POST /review
-Content-Type: multipart/form-data
-```
-
-Response example:
-
-```json
-{
-  "document_type": "MSA",
-  "risk_level": "high",
-  "findings": [
-    {
-      "clause": "Indemnity",
-      "severity": "high",
-      "issue": "Broad indemnity obligation without mutuality.",
-      "suggestion": "Limit indemnity to direct third-party claims caused by breach or negligence."
-    }
-  ],
-  "summary": "The contract contains several non-standard clauses that should be reviewed before signature."
-}
-```
-
-### Output Example
-
-- **Issue:** IP ownership is unclear in the contractor clause.
-- **Risk:** High.
-- **Suggestion:** State that all deliverables and related work product are assigned to the company upon payment.
+- **Tipo de documento:** MSA.
+- **Nivel de riesgo:** alto.
+- **Hallazgos:** cláusulas no estándar.
+- **Sugerencias:** redacción alternativa.
+- **Resumen:** contrato con puntos que requieren revisión humana.
 
 ---
 
-## API Design
+## Diseño de la API
 
 ### `POST /review`
-Uploads a contract and returns a structured analysis report.
-
-### `POST /chat`
-Allows guided follow-up questions about the contract findings.
+Recibe un contrato y devuelve un análisis estructurado.
 
 ### `GET /health`
-Returns service status.
+Verifica el estado del servicio.
 
-### Recommended Response Schema
+### Esquema sugerido de respuesta
 
 ```json
 {
@@ -274,73 +233,63 @@ Returns service status.
 
 ---
 
-## Security and Legal Notes
+## Seguridad y aviso legal
 
-LexIA is a review assistant, not legal counsel. Its output should be treated as decision support, not a final legal opinion.
+LexIA es un asistente de revisión, no un reemplazo del asesoramiento legal.
 
-Recommended safeguards:
-- Do not upload confidential contracts without access controls.
-- Store documents securely.
-- Log analysis events for auditability.
-- Keep human review in the approval loop.
-- Separate policy content from generated output.
+Recomendaciones:
+- No subir documentos confidenciales sin controles de acceso.
+- Guardar los archivos de forma segura.
+- Mantener trazabilidad de las revisiones.
+- Conservar siempre la revisión humana final.
 
-For production use, add:
-- Authentication.
-- Role-based access control.
-- Encryption at rest and in transit.
-- Data retention policies.
-- Prompt-injection and document parsing protections.
-
----
-
-## Roadmap
-
-- OCR support for scanned documents.
-- Clause-by-clause diff view.
-- Jurisdiction-aware rule packs.
-- Multi-language support.
-- Playbook editor UI.
-- Workflow approvals.
-- Export to PDF and DOCX.
-- Integration with GitHub Issues, Slack, and Notion.
-- Fine-tuned domain classifier for technology/IP agreements.
+Para producción conviene agregar:
+- Autenticación.
+- Control de roles.
+- Cifrado en tránsito y en reposo.
+- Políticas de retención.
+- Protección contra documentos maliciosos o prompts inyectados.
 
 ---
 
-## Contributing
+## Hoja de ruta
 
-Contributions are welcome.
-
-Suggested workflow:
-1. Fork the repository.
-2. Create a feature branch.
-3. Add tests for new behavior.
-4. Submit a pull request with a clear description.
-5. Include examples when changing prompts or review logic.
-
-Suggested contribution areas:
-- Prompt engineering.
-- Clause taxonomy.
-- Contract parsers.
-- Risk scoring.
-- UI/UX improvements.
-- Evaluations and benchmarks.
+- OCR para contratos escaneados.
+- Comparación cláusula por cláusula.
+- Soporte multilenguaje.
+- Editor de playbooks.
+- Exportación a PDF y DOCX.
+- Integración con Slack, Notion y GitHub Issues.
+- Clasificación más fina por tipo de contrato.
 
 ---
 
-## License
+## Contribuir
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+Las contribuciones son bienvenidas.
+
+### Flujo sugerido
+1. Hacé un fork del repositorio.
+2. Creá una rama nueva.
+3. Agregá pruebas si cambiás comportamiento.
+4. Abrí un pull request con una explicación clara.
+
+### Áreas para colaborar
+- Ingeniería de prompts.
+- Taxonomía de cláusulas.
+- Parsers de contratos.
+- Puntaje de riesgo.
+- UI y experiencia de usuario.
+- Evaluaciones y benchmarks.
 
 ---
 
-## Acknowledgements
+## Licencia
 
-Inspired by modern AI legal workflows that detect risks, compare agreements against templates, suggest clause improvements, and summarize findings for faster review [web:8].
+Este proyecto se publica bajo licencia MIT. Ver el archivo `LICENSE` para más detalles.
 
 ---
 
-## Disclaimer
+## Autora
 
-LexIA is provided for informational and engineering purposes only. It does not replace qualified legal advice.
+**Yasmina Carla Fernández**
