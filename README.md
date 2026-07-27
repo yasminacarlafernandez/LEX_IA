@@ -1,124 +1,141 @@
 # LexIA
 
-**Agente de IA para revisión de contratos de Tecnología y Propiedad Intelectual**
+## Agente de Inteligencia Artificial para revisión de contratos de Tecnología y Propiedad Intelectual
 
-LexIA es un asistente basado en Inteligencia Artificial diseñado para apoyar la revisión preliminar de contratos tecnológicos y de propiedad intelectual. Permite identificar cláusulas relevantes, detectar riesgos potenciales y generar informes ejecutivos estructurados para equipos legales, startups y organizaciones orientadas a la innovación.
-
-El proyecto explora la aplicación de Inteligencia Artificial en flujos de trabajo legales, combinando análisis contractual, procesamiento documental y generación automatizada de reportes.
-
-[![IA](https://img.shields.io/badge/IA-Revisi%C3%B3n%20de%20Contratos-7B61FF)](#)
+[![IA](https://img.shields.io/badge/IA-Revisi%C3%B3n%20Contractual-7B61FF)](#)
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB)](#)
+[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)](#)
 [![Licencia](https://img.shields.io/badge/Licencia-MIT-green)](#)
-[![Estado](https://img.shields.io/badge/Estado-Prototipo-orange)](#)
 
 ---
 
-## Descripción general
+## Descripción
 
-LexIA está orientado a la revisión inicial de contratos de tecnología y propiedad intelectual.
+**LexIA** es un agente basado en Inteligencia Artificial diseñado para asistir en la revisión preliminar de contratos tecnológicos y de Propiedad Intelectual.
 
-El agente analiza contratos relacionados con:
+La aplicación permite analizar documentos contractuales, identificar cláusulas relevantes, detectar posibles riesgos y generar informes ejecutivos estructurados.
 
-- Acuerdos de software.
-- Contratos SaaS.
-- Licencias de software.
-- Acuerdos de confidencialidad (NDA).
-- Cláusulas de propiedad intelectual.
+El proyecto explora la aplicación de Inteligencia Artificial en procesos legales, combinando:
+
+- Análisis contractual.
+- Procesamiento documental.
+- Automatización de reportes.
+- Tecnología aplicada al Derecho.
+
+LexIA funciona como herramienta de apoyo y no reemplaza el análisis profesional jurídico.
+
+---
+
+# Objetivo del proyecto
+
+Los contratos tecnológicos contienen información crítica relacionada con derechos, obligaciones y riesgos.
+
+LexIA busca facilitar una primera revisión organizada sobre aspectos como:
+
+- Propiedad Intelectual.
+- Confidencialidad.
 - Protección de datos.
+- Limitaciones de responsabilidad.
+- Terminación contractual.
+- Licencias de software.
 - Servicios tecnológicos.
 
-El objetivo no es reemplazar el criterio profesional legal, sino reducir tareas repetitivas y brindar una capa estructurada de análisis que facilite la toma de decisiones.
+---
+
+# Funcionalidades principales
+
+✅ Carga de contratos en formatos PDF, DOCX y TXT.
+
+✅ Extracción automática del contenido documental.
+
+✅ Identificación de cláusulas contractuales relevantes.
+
+✅ Análisis preliminar de riesgos.
+
+✅ Generación de informes ejecutivos.
+
+✅ Clasificación de hallazgos.
+
+✅ Selector de idioma del reporte.
+
+✅ Interfaz web desarrollada con Streamlit.
 
 ---
 
-## Problema que resuelve
+# Flujo de funcionamiento
 
-Los contratos tecnológicos suelen contener cláusulas complejas que requieren una revisión detallada, especialmente en:
-
-- Titularidad de propiedad intelectual.
-- Obligaciones de confidencialidad.
-- Limitaciones de responsabilidad.
-- Condiciones de terminación.
-- Protección de datos.
-- Cesión de derechos.
-
-LexIA ayuda mediante:
-
-- Extracción de cláusulas relevantes.
-- Identificación de posibles riesgos.
-- Organización de hallazgos.
-- Generación de informes ejecutivos.
-
----
-
-## Funcionalidades principales
-
-- Carga de contratos en formato PDF, DOCX o TXT.
-- Extracción automática de texto.
-- Identificación de cláusulas contractuales relevantes.
-- Análisis preliminar de riesgos.
-- Detección de aspectos relacionados con tecnología y propiedad intelectual.
-- Generación de informes ejecutivos.
-- Clasificación de riesgos.
-- Selección de idioma del informe.
-- Interfaz desarrollada con Streamlit.
+```text
+Usuario
+  |
+  v
+Carga del contrato
+  |
+  v
+Extracción documental
+(PDF / DOCX / TXT)
+  |
+  v
+Análisis mediante agente IA
+  |
+  v
+Identificación de cláusulas y riesgos
+  |
+  v
+Generación de informe ejecutivo
+```
 
 ---
-
-## Cómo funciona
-
-LexIA sigue el siguiente flujo:
-
-1. La persona usuaria carga un contrato.
-2. El sistema extrae el contenido del documento.
-3. El agente de IA analiza las cláusulas relevantes.
-4. Se identifican riesgos y observaciones.
-5. Se genera un informe estructurado.
-
-Ejemplo:
-
-**Entrada:**
-
-Contrato SaaS con cláusulas de propiedad intelectual y responsabilidad.
-
-**Salida:**
-
-Informe estructurado con:
-
-- Resumen del contrato.
-- Cláusulas detectadas.
-- Observaciones de riesgo.
-- Recomendaciones de revisión.
-
----
-
 ## Arquitectura
 
-```mermaid
-flowchart TD
-    A[Usuario carga contrato] --> B[Lector de documentos]
-    B --> C[Extracción de cláusulas]
-    C --> D[Agente de análisis contractual IA]
-    D --> E[Evaluación de riesgos]
-    E --> F[Generación de informe ejecutivo]
-    F --> G[Interfaz Streamlit]
+LexIA está compuesto por los siguientes módulos:
 
-    D --> H[(Gemini API)]
-    B --> I[(Documento procesado)]
-    LEX_IA/
+```text
+Usuario
+  |
+  v
+Carga del contrato
+  |
+  v
+Extracción documental
+(PDF / DOCX / TXT)
+  |
+  v
+Agente de análisis contractual IA
+  |
+  v
+Identificación de cláusulas y riesgos
+  |
+  v
+Generación de informe ejecutivo
+  |
+  v
+Interfaz Streamlit
+```
+
+### Estructura del proyecto
+
+```text
+LEX_IA/
+├── app.py
 ├── agents/
 │   └── contract_agent.py
 ├── utils/
 │   ├── pdf_reader.py
 │   └── docx_reader.py
 ├── screenshots/
-├── app.py
+│   ├── 01_portada_lexia.png
+│   ├── 02_carga_contrato.png
+│   ├── 03_informe_generado.png
+│   ├── 04_analisis_detalle.png
+│   └── LEXIA_Demo.mp4
 ├── requirements.txt
 ├── .env.example
 ├── .gitignore
 ├── LICENSE
 └── README.md
-## Capturas de pantalla
+```
+
+# Capturas de pantalla
 
 ### Pantalla principal
 
@@ -138,7 +155,7 @@ flowchart TD
 
 ---
 
-## Demo
+# Demo
 
 Video demostrativo del flujo principal de LexIA:
 
