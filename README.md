@@ -133,9 +133,9 @@ LEX_IA/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-```
+---
 
-# Capturas de pantalla
+## Capturas de pantalla
 
 ### Pantalla principal
 
@@ -155,7 +155,7 @@ LEX_IA/
 
 ---
 
-# Demo
+## Demo
 
 Video demostrativo del flujo principal de LexIA:
 
