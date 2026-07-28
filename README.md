@@ -9,7 +9,7 @@
 
 ## Descripción
 
-LexIA es una aplicación desarrollada en Python y Streamlit que utiliza Inteligencia Artificial para realizar un análisis preliminar de contratos vinculados con Tecnología y Propiedad Intelectual.
+LexIA es una aplicación desarrollada en Python y Streamlit que utiliza Inteligencia Artificial para realizar un análisis preliminar de contratos tecnológicos y de propiedad intelectual.
 
 La herramienta permite cargar documentos, extraer automáticamente su contenido y generar un informe ejecutivo identificando cláusulas relevantes y posibles riesgos jurídicos.
 
@@ -19,13 +19,13 @@ La herramienta permite cargar documentos, extraer automáticamente su contenido 
 
 ## Funcionalidades
 
-- Carga de contratos en formato PDF.
-- Carga de contratos en formato DOCX.
+- Carga de contratos en formato PDF y DOCX.
 - Extracción automática de texto.
 - Análisis mediante Google Gemini.
-- Identificación de cláusulas relevantes.
+- Identificación de cláusulas contractuales relevantes.
 - Evaluación preliminar de riesgos.
 - Generación de informe ejecutivo.
+- Clasificación de riesgos.
 - Selección de idioma del informe (Español / Inglés).
 - Interfaz web desarrollada con Streamlit.
 
@@ -59,21 +59,24 @@ LexIA identifica, entre otras, las siguientes cláusulas:
 ## Estructura del proyecto
 
 ```text
-LEXIA
-│
-├── agents
+LEX_IA/
+├── app.py
+├── agents/
 │   └── contract_agent.py
-│
-├── utils
+├── utils/
 │   ├── pdf_reader.py
 │   └── docx_reader.py
-│
-├── screenshots
-│
-├── app.py
+├── screenshots/
+│   ├── 01_portada_lexia.png
+│   ├── 02_carga_contrato.png
+│   ├── 03_informe_generado.png
+│   ├── 04_analisis_detalle.png
+│   └── LEXIA_Demo.mp4
 ├── requirements.txt
-├── README.md
-└── .env.example
+├── .env.example
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -131,51 +134,42 @@ Generación del informe
 
 ---
 
-# Capturas de pantalla
+## Capturas de pantalla
 
-## 1. Pantalla principal
+### Pantalla principal
 
-![Pantalla principal](screenshots/01_portada_lexia.png)
+![Pantalla principal LexIA](./screenshots/01_portada_lexia.png)
 
----
+### Carga y análisis del contrato
 
-## 2. Carga del contrato
+![Carga y análisis del contrato](./screenshots/02_carga_contrato.png)
 
-![Carga del contrato](screenshots/02_carga_contrato.png)
+### Informe generado
 
----
+![Informe generado](./screenshots/03_informe_generado.png)
 
-## 3. Análisis del documento
+### Vista adicional de análisis
 
-![Análisis del documento](screenshots/03_análisis_del_documento.png)
-
----
-
-## 4. Informe generado
-
-![Informe generado](screenshots/04_informe_generado.png)
+![Vista adicional de análisis](./screenshots/04_analisis_detalle.png)
 
 ---
 
-## 5. Resultado final
+## Demo
 
-![Resultado final](screenshots/05_informe_generado.png)
+Video demostrativo del flujo principal de LexIA:
+
+[Ver demo de LexIA](./screenshots/LEXIA_Demo.mp4)
 
 ---
 
-# Demo
+## Casos de uso
 
-Se incluye una demostración en video del funcionamiento de la aplicación.
-
-**Archivo:** `LEXIA_Demo.mp4`
-
-El video muestra:
-
-- Carga de un contrato.
-- Procesamiento mediante IA.
-- Identificación de cláusulas relevantes.
-- Evaluación preliminar de riesgos.
-- Generación automática del informe ejecutivo.
+- Abogados especializados en Tecnología.
+- Profesionales de Propiedad Intelectual.
+- Startups.
+- Empresas SaaS.
+- Estudios jurídicos.
+- Equipos de Compliance.
 
 ---
 
