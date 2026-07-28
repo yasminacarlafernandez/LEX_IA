@@ -1,4 +1,4 @@
-# ⚖️ LexIA – Agente de IA para el análisis preliminar de contratos tecnológicos y de Propiedad Intelectual
+# ⚖️ LexIA – Agente de IA para Análisis de Contratos Tecnológicos y de Propiedad Intelectual
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
@@ -13,38 +13,39 @@ LexIA es una aplicación desarrollada en Python y Streamlit que utiliza Intelige
 
 La herramienta permite cargar documentos, extraer automáticamente su contenido y generar un informe ejecutivo identificando cláusulas relevantes y posibles riesgos jurídicos.
 
-> **Importante:** LexIA constituye una herramienta de apoyo para profesionales del Derecho y no reemplaza el análisis ni el criterio jurídico de un abogado.
+> **Importante:** LexIA es una herramienta de apoyo para profesionales del Derecho y no reemplaza el análisis jurídico realizado por un abogado.
 
 ---
 
-# Funcionalidades
+## Funcionalidades
 
-- Carga de contratos en formato PDF y DOCX.
-- Extracción automática del texto.
+- Carga de contratos en formato PDF.
+- Carga de contratos en formato DOCX.
+- Extracción automática de texto.
 - Análisis mediante Google Gemini.
 - Identificación de cláusulas relevantes.
 - Evaluación preliminar de riesgos.
 - Generación de informe ejecutivo.
-- Selección del idioma del informe (Español / Inglés).
+- Selección de idioma del informe (Español / Inglés).
 - Interfaz web desarrollada con Streamlit.
 
 ---
 
-# Cláusulas analizadas
+## Cláusulas analizadas
 
-LexIA busca identificar, entre otras, las siguientes cláusulas:
+LexIA identifica, entre otras, las siguientes cláusulas:
 
-- Confidencialidad
-- Propiedad Intelectual
-- Protección de Datos
-- Limitación de Responsabilidad
-- Terminación
-- Ley Aplicable
-- Indemnidad
+- Confidencialidad.
+- Propiedad Intelectual.
+- Protección de Datos.
+- Limitación de Responsabilidad.
+- Terminación.
+- Ley Aplicable.
+- Indemnidad.
 
 ---
 
-# Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python
 - Streamlit
@@ -55,7 +56,7 @@ LexIA busca identificar, entre otras, las siguientes cláusulas:
 
 ---
 
-# Estructura del proyecto
+## Estructura del proyecto
 
 ```text
 LEXIA
@@ -77,21 +78,21 @@ LEXIA
 
 ---
 
-# Instalación
+## Instalación
 
-## 1. Clonar el repositorio
+### 1. Clonar el repositorio
 
 ```bash
 git clone https://github.com/yasminacarlafernandez/LEX_IA.git
 ```
 
-## 2. Instalar dependencias
+### 2. Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3. Configurar la API de Gemini
+### 3. Configurar la API de Gemini
 
 Crear un archivo `.env`
 
@@ -99,7 +100,7 @@ Crear un archivo `.env`
 GEMINI_API_KEY=TU_API_KEY
 ```
 
-## 4. Ejecutar la aplicación
+### 4. Ejecutar la aplicación
 
 ```bash
 streamlit run app.py
@@ -107,7 +108,7 @@ streamlit run app.py
 
 ---
 
-# Flujo de trabajo
+## Flujo de trabajo
 
 ```text
 Carga del contrato
@@ -132,73 +133,86 @@ Generación del informe
 
 # Capturas de pantalla
 
-## Pantalla principal
+## 1. Pantalla principal
 
-![Pantalla principal](screenshots/home.png)
-
----
-
-## Carga del contrato
-
-![Carga](screenshots/upload.png)
+![Pantalla principal](screenshots/01_portada_lexia.png)
 
 ---
 
-## Resultado del análisis
+## 2. Carga del contrato
 
-![Resultado](screenshots/analysis.png)
-
----
-
-## Informe generado
-
-![Informe](screenshots/report.png)
+![Carga del contrato](screenshots/02_carga_contrato.png)
 
 ---
 
-# Demostración
+## 3. Análisis del documento
 
-A continuación se muestra una demostración del funcionamiento de la aplicación mediante un GIF.
-
-![Demo](screenshots/demo.gif)
+![Análisis del documento](screenshots/03_análisis_del_documento.png)
 
 ---
 
-# Posibles mejoras
+## 4. Informe generado
 
-- Exportación del informe en PDF.
-- Comparación entre versiones de contratos.
-- Panel de métricas y riesgos.
-- Incorporación de nuevos tipos de cláusulas.
-- Soporte para más formatos de documentos.
+![Informe generado](screenshots/04_informe_generado.png)
+
+---
+
+## 5. Resultado final
+
+![Resultado final](screenshots/05_informe_generado.png)
+
+---
+
+# Demo
+
+Se incluye una demostración en video del funcionamiento de la aplicación.
+
+**Archivo:** `LEXIA_Demo.mp4`
+
+El video muestra:
+
+- Carga de un contrato.
+- Procesamiento mediante IA.
+- Identificación de cláusulas relevantes.
+- Evaluación preliminar de riesgos.
+- Generación automática del informe ejecutivo.
+
+---
+
+## Posibles mejoras futuras
+
+- Exportación de informes en PDF.
+- Comparación entre contratos.
+- Dashboard de riesgos.
 - Historial de análisis.
-- Mayor personalización del reporte.
+- Nuevos tipos de cláusulas.
+- Soporte para formatos adicionales.
+- Recomendaciones automáticas de mejora contractual.
 
 ---
 
-# Aviso
+## Aviso
 
-Los resultados generados por LexIA poseen fines exclusivamente educativos y de apoyo al análisis preliminar de documentos jurídicos.
+Los resultados generados por LexIA tienen fines exclusivamente educativos y de apoyo al análisis preliminar de documentos jurídicos.
 
 Toda conclusión debe ser revisada y validada por un profesional del Derecho antes de su utilización.
 
 ---
 
-# Autora
+## Autora
 
 **Yasmina Carla Fernández**
 
-Abogada
-
-Agente de la Propiedad Intelectual (INPI)
-
-Especialización en Tecnología, Inteligencia Artificial y Compliance.
+- Abogada
+- Agente de la Propiedad Intelectual (INPI)
+- Especialización en Tecnología, Inteligencia Artificial y Compliance
 
 GitHub:
+
 https://github.com/yasminacarlafernandez
 
 ---
 
-# Licencia
+## Licencia
 
-Este proyecto se distribuye bajo la licencia MIT.
+Este proyecto se distribuye bajo licencia MIT.
