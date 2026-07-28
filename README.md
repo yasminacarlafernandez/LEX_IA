@@ -33,8 +33,6 @@ La herramienta permite cargar documentos, extraer automáticamente su contenido 
 
 ## Cláusulas analizadas
 
-LexIA identifica, entre otras, las siguientes cláusulas:
-
 - Confidencialidad.
 - Propiedad Intelectual.
 - Protección de Datos.
@@ -138,19 +136,19 @@ Generación del informe
 
 ### Pantalla principal
 
-![Pantalla principal LexIA](./screenshots/01_portada_lexia.png)
+![Pantalla principal LexIA](screenshots/01_portada_lexia.png)
 
 ### Carga y análisis del contrato
 
-![Carga y análisis del contrato](./screenshots/02_carga_contrato.png)
+![Carga y análisis del contrato](screenshots/02_carga_contrato.png)
 
 ### Informe generado
 
-![Informe generado](./screenshots/03_informe_generado.png)
+![Informe generado](screenshots/03_informe_generado.png)
 
 ### Vista adicional de análisis
 
-![Vista adicional de análisis](./screenshots/04_analisis_detalle.png)
+![Vista adicional de análisis](screenshots/04_analisis_detalle.png)
 
 ---
 
@@ -158,7 +156,7 @@ Generación del informe
 
 Video demostrativo del flujo principal de LexIA:
 
-[Ver demo de LexIA](./screenshots/LEXIA_Demo.mp4)
+[Ver demo de LexIA](screenshots/LEXIA_Demo.mp4)
 
 ---
 
